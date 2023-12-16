@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for category in category_detail %}
+<a href="{% url 'category_detail' slug=post.slug %}">{{ category.name }}</a><br>
+{% endfor %}
+</body>
+</html>
